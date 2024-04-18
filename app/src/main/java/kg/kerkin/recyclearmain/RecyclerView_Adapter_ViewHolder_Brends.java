@@ -8,21 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.squareup.picasso.Picasso;
-
 import java.io.File;
-import java.lang.reflect.Array;
 import java.util.List;
-
-import kg.kerkin.recyclearmain.R;
 
 public class RecyclerView_Adapter_ViewHolder_Brends
         extends RecyclerView.Adapter<RecyclerView_Adapter_ViewHolder_Brends.ViewHolder> {
@@ -45,7 +38,7 @@ public class RecyclerView_Adapter_ViewHolder_Brends
 
     public void toggleSelection(boolean isChecked) {
         Log.e(logeTAG, "ClickSize: " + listSimple.size());
-        if (listSimple != null && listSimple.size() > 0) {
+        if (listSimple.size() > 0) {
             int i = 0;
             checkBoxStateArray.clear();
             while (i < listSimple.size()) {
@@ -160,10 +153,4 @@ public class RecyclerView_Adapter_ViewHolder_Brends
             checkBox = view.findViewById(R.id.checkBoxBrends);
         }
     }
-
-    private void ToastOverride(String text) {
-        Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
-    }
-
-
 }
