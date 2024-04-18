@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityFormaBrendsforAgentsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(android.R.drawable.arrow_down_float);
         getSupportActionBar().setTitle("Форма для создания брендов");
