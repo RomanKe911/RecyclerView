@@ -35,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityFormaBrendsforAgentsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        Objects.requireNonNull(getSupportActionBar()).setDisplayShowHomeEnabled(true);
+ /*       getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(android.R.drawable.arrow_down_float);
         getSupportActionBar().setTitle("Форма для создания брендов");
-        getSupportActionBar().setSubtitle("");
+        getSupportActionBar().setSubtitle("");*/
 
         mSettings = getApplication().getSharedPreferences(APP_PREFERENCES, Context.MODE_PRIVATE);
         context_Activity = getApplication().getBaseContext();
