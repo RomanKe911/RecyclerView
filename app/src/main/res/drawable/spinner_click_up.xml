@@ -14,7 +14,7 @@
             </item>
 
             <item
-                android:drawable="@drawable/spinner_arrow_drop"
+                android:drawable="@android:drawable/btn_star"
                 android:gravity="end"/>
 
         </layer-list>

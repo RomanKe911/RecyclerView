@@ -14,7 +14,7 @@
             </item>
 
             <item
-                android:drawable="@android:drawable/arrow_up_float"
+                android:drawable="@android:drawable/btn_star_big_on"
                 android:gravity="end"/>
 
         </layer-list>
