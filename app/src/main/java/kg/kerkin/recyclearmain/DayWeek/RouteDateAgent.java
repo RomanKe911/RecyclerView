@@ -103,6 +103,7 @@ public class RouteDateAgent extends AppCompatActivity implements CustomSpinner.O
             adapterSimpleDayWeek.add(new SpinnerAdapterSimple_DayWeek(mass));
 
 
+        binding.workDaySpinnerWeek.setSpinnerEventsListener(this);
         SpinnerAdapter_DayWeek adapterDayWeek = new SpinnerAdapter_DayWeek(RouteDateAgent.this, adapterSimpleDayWeek);
         binding.workDaySpinnerWeek.setAdapter(adapterDayWeek);
 
@@ -185,7 +186,7 @@ public class RouteDateAgent extends AppCompatActivity implements CustomSpinner.O
 
     @Override
     public void onPopupWindowClosed(Spinner spinner) {
-        binding.workDaySpinnerWeek.setBackground(getResources().getDrawable(R.drawable.spinner_click_up));
+        binding.workDaySpinnerWeek.setBackground(getResources().getDrawable(R.drawable.spinner_click_dowm));
 
     }
 }
