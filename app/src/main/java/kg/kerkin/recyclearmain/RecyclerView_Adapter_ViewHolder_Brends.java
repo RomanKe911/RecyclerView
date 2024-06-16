@@ -56,7 +56,10 @@ public class RecyclerView_Adapter_ViewHolder_Brends
     String logeTAG = "RecAdapter";
     Context context;
 
-    public RecyclerView_Adapter_ViewHolder_Brends(Context context, List<ListAdapterSimple_Brends> list, OnStateClickListener onClickListener, OnStateCheckClick onStateCheckClick) {
+    public RecyclerView_Adapter_ViewHolder_Brends(Context context,
+                                                  List<ListAdapterSimple_Brends> list,
+                                                  OnStateClickListener onClickListener,
+                                                  OnStateCheckClick onStateCheckClick) {
         this.context = context;
         this.listSimple = list;
         this.inflater = LayoutInflater.from(context);

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Forma_ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/listDayWeek_ClientCardClient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/selector_listrectlcear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <CheckBox
+            android:id="@+id/listDayWeek_CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:button="@drawable/checkbox_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/listDayWeek_INN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="14"
+            android:visibility="gone"
+            tools:visibility="gone"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/listDayWeek_ClientUID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/listDayWeek_ClientName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:text="ЧП Эльмира"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/listDayWeek_ClientAdress"
+            app:layout_constraintEnd_toStartOf="@+id/listDayWeek_CheckBox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/listDayWeek_ClientAdress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listDayWeek_ClientName"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:text='г.Каракол; ул. Ленина; рынок "Макиш-Ата" №152/1'
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/listDayWeek_CheckBox"
+            app:layout_constraintStart_toStartOf="@+id/listDayWeek_ClientName"
+            app:layout_constraintTop_toBottomOf="@+id/listDayWeek_ClientName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
